@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tulip</title>
+</head>
+<style>
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: lightblue;
+    font-family: cursive;
+  }
+  header {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 500px;
+    text-align: center;
+    color: white;
+    color: steelblue;
+    -webkit-text-stroke: 1px midnightblue;
+  }
+  #tulip {
+  
+  }
+  #stem {
+  position: absolute;
+  top: 320px;
+  left: 200px;
+  height: 220px;
+  width: 20px;
+  background: linear-gradient(to right, lawngreen, green);
+  border: solid 2px green;
+  border-radius: 5px;
+  }
+  #leaf2 {
+  position: absolute;
+  top: 360px;
+  left: 235px;
+  rotate: 15deg;
+  height: 100px;
+  width: 40px;
+  background: linear-gradient(to right, lawngreen, green);
+  border: solid 2px green;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  }
+  #leaf1 {
+  position: absolute;
+  top: 330px;
+  left: 145px;
+  rotate: -15deg;
+  height: 100px;
+  width: 40px;
+  background: linear-gradient(to right, lawngreen, green);
+  border: solid 2px green;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  }
+  #back {
+  position: absolute;
+  top: 240px;
+  left: 180px;
+  rotate: -45deg;
+  height: 60px;
+  width: 60px;
+  background: linear-gradient(to bottom right, skyblue, steelblue);
+  border: solid 2px steelblue;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  }
+  #left {
+  position: absolute;
+  top: 245px;
+  left: 210px;
+  height: 75px;
+  width: 50px;
+  color: blue;
+  background: linear-gradient(to right, skyblue, steelblue);
+  border: solid 2px steelblue;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  }
+  #right {
+  position: absolute;
+  top: 245px;
+  left: 160px;
+  height: 75px;
+  width: 50px;
+  background: linear-gradient(to right, skyblue, steelblue);
+  border: solid 2px steelblue;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  }
+  #text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 30px;
+  color: white;
+  width: 275px;
+  color: steelblue;
+  -webkit-text-stroke: 0.5px midnightblue;
+}
+  #showMsg {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: solid 2px steelblue;
+    color: midnightblue;
+  }
+  #msg {
+    position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 30px;
+  color: white;
+  width: 235px;
+  color: steelblue;
+  -webkit-text-stroke: 0.5px midnightblue;
+  }
+  #letter {
+    position: absolute;
+    top: 95%;
+    display: block;
+    font-size: 20px;
+    padding: 20px;
+    background: whitesmoke;
+    margin: 15px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: steelblue;
+    -webkit-text-stroke: 0.2px midnightblue;
+    border: solid 3px steelblue;
+  }
+  #hideMsg {
+    position: absolute;
+    bottom: 0.5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: solid 2px steelblue;
+    color: midnightblue;
+  }
+  }
+  #paragraph {
+    text-indent: 50px; 
+    text-align: justify;
+  }
+  .container {
+    opacity: 0;
+  }
+</style>
+<body>
+
+<div id="second">
+  <header>
+  <b style="font-size: 35px">Happy </b><b style="font-size: 70px; vertical-align: -10px">18th </b><b style="font-size: 35px">Monthsary</b><br>
+  <b style="font-size: 40px">My Love 💙</b>
+  </header>
+  <br><br>
+  <div id="tulip">
+    <div id="stem" class="rectangle"></div>
+    <div id="leaf2" class="rectangle"></div>
+    <div id="leaf1" class="rectangle"></div>
+    <div id="back" class="square"></div>
+    <div id="left" class="rectangle"></div>
+    <div id="right" class="rectangle"></div>
+  </div>
+  <br>
+  <p id="text">Flower for you My Love 💙</p>
+  <button type="button" id="showMsg"><b>OPEN ⬇️ </b></button>
+  
+  <div id="container" class="container">
+  <h3 id="msg">Letter for My Love 💙</h3>
+  <div id="letter">
+    <p>To My Love,
+     My Girl,
+     My Tahanan,
+     My Palagi,</p>
+
+    <p id="paragraph">Happy 18th monthsary my Loveeeee. I just want to express my  appreciation and my Love to you. First of all I want to say thank you sa lahat Love. Recently I know I've been a bad boyfriend to you and I'm sorry for that. Thank you kasi nagsstay ka sakin kahit ganto lang ako. Thank you sa pagiging understanding and for being patient to me. Thank you sa love care support mo and everything. I don't know pano ko ipagpapatuloy yung buhay ko kung wala ka ngayon. Thank you kasi pinipili mo ko kahit na simple at ganitong klase lang ako ng lalaki. Nadodown ako at kung ano-ano naiisip ko sa sarili ko kasi ganito lang ako. Pero thank you kasi pinapa realize mo sakin kung sino ako at ano ako. Pinaparamdam mo sakin na deserve ko din intindihin intayin piliin mahalin. Thank you for appreciating me Love. I really appreciate you so much. I appreciate from the smallest to the biggest efforts Love. Thank you sa physical touch sa lambing sa pagbaby sakin sa mga efforts mo sa time sa pagiging adorable sa pagiging cute sa pagiging maganda sa pagiging mabuti sa pagluluto sakin sa pagmamahal sakin sa lahat-lahat Love. Thank you for being the best girlfriend Love. Thank youuuuuu. I don't promise but I'll do my best to be the best boyfriend and man for you. I'm sorry if I'm only like this. I'm sorry for everything Love. Lalo na po sa mga panahon na nasasaktan kita. I'm sorry sa lahat ng mga sakit na naidulot ko sayo. I'm sorry sa pagiging bad boyfriend sayo. I'm sorry for always making you disappointed. I'm sorry for always hurting your feelings. I'm sorry for always making you feel bad about yourself. I'm sorry for always making you feel alone. I'm so sorry for all the time that I'm not on your side. I'm so sorry my Love. Sorry kasi palagi nalang akong nagsosorry. Nagsosorry ako sayo kasi mali ako sa mga ginawa ko sayo. Napaka thankful ko kasi kahit na andami ko ng nagawa sa'yong pagkakamali eto ka padin pinipili mo padin ako. Ikaw naman Love you don't have to worry, I'll always choose you. I'll choose you as always. I'll love you as always. I'll care for you as always. That's my assurance to you Love. I'm not saying na napakagaling ko, but my actions will speak when my mouth doesn't. Alam ko hindi ako napaka talkative sayo ewan ko good boy ako sayo bigla. Sa mga actions ko naman dinadaan yung care ko sayo. Mahal na mahal kita Love. Mahal na mahal kita tahanan ko, mahal ko, pahinga ko. Thank you so much for coming into my life. I always thank God because you came into my life. And I hope God always guide you and make you safe. I love you so much my Love. I don't love you moreeeeeee. Happy monthsary po uli Love<3 </p>
+
+<p style="text-align: right">From your Man, Love Zedrick 💙</p>
+<br>
+  <button type="button" id="hideMsg"><b>CLOSE ⬆️</b></button>
+  </div>
+  </div>
+</div>
+</body>
+<script>
+document.getElementById("showMsg").onclick = 
+function() {
+  document.getElementById("container").style.opacity = 1;
+};
+document.getElementById("hideMsg").onclick = 
+function() {
+  document.getElementById("container").style.opacity = 0;
+}
+</script>
+</html>
