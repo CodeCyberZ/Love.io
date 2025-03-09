@@ -156,7 +156,7 @@
     text-align: justify;
   }
   .container {
-    opacity: 0;
+    display = none;
   }
 </style>
 <body>
@@ -199,11 +199,11 @@
 <script>
 document.getElementById("showMsg").onclick = 
 function() {
-  document.getElementById("container").style.opacity = 1;
+  document.getElementById("container").style.display = "block";
 };
 document.getElementById("hideMsg").onclick = 
 function() {
-  document.getElementById("container").style.opacity = 0;
+  document.getElementById("container").style.display = "none";
 }
 </script>
 </html>
